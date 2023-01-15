@@ -17,3 +17,45 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 $request_method = $_SERVER["REQUEST_METHOD"];
 $request_uri = explode("/", $_SERVER["REQUEST_URI"]);
 $resource = array_shift($request_uri);
+switch ($request_method) {
+    case 'GET':
+        handleGet($resource, $request_uri);
+        break;
+    case 'POST':
+        handlePost($resource, $request_uri);
+        break;
+    case 'PUT':
+        handlePut($resource, $request_uri);
+        break;
+    case 'DELETE':
+        handleDelete($resource, $request_uri);
+        break;
+    default:
+        handleError();
+        break;
+}
+
+function handleGet($resource, $request_uri)
+{
+    // handle GET request
+}
+
+function handlePost($resource, $request_uri)
+{
+    // handle POST request
+}
+
+function handlePut($resource, $request_uri)
+{
+    // handle PUT request
+}
+
+function handleDelete($resource, $request_uri)
+{
+    // handle DELETE request
+}
+
+function handleError()
+{
+    // handle error
+}
