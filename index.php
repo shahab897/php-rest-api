@@ -14,3 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']))
         header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");
 }
+$request_method = $_SERVER["REQUEST_METHOD"];
+$request_uri = explode("/", $_SERVER["REQUEST_URI"]);
+$resource = array_shift($request_uri);
