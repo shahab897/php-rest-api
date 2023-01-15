@@ -12,10 +12,7 @@ This is a simple REST API built using PHP. It provides endpoints for handling GE
 ## Setup
 
 1. Clone this repository.
-2. Set up a web server and configure it to point to the `public` directory
-3. Create a MySQL database and import the `db.sql` file
-4. Update the `config.php` file with your database connection details
-5. Install dependencies via composer `composer install`
+2. Set up a web server and configure it to point to the `root` directory
 
 ## Usage
 
@@ -23,8 +20,6 @@ Make HTTP requests to the endpoints listed above. The API will return data in JS
 
 ## Dependencies
 - PHP >= 7.0
-- MySQL
-- Composer
 
 ## Example
 
