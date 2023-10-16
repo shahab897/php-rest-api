@@ -38,6 +38,8 @@ switch ($request_method) {
 function handleGet($resource, $request_uri)
 {
     // handle GET request
+    $data = ['status'=> true];
+    return json_encode();
 }
 
 function handlePost($resource, $request_uri)
