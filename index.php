@@ -45,6 +45,9 @@ function handleGet($resource, $request_uri)
 function handlePost($resource, $request_uri)
 {
     // handle POST request
+
+    $data = ['status'=> true]; 
+    return json_encode();
 }
 
 function handlePut($resource, $request_uri)
